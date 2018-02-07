@@ -12,7 +12,7 @@ var eyeColor= "black";
 function setup() {
   // put setup code here
 
-createCanvas(800, 800);
+createCanvas(800, 500);
 background(255,255,255);
 
 button1= createButton("Red");
