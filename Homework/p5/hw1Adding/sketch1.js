@@ -55,6 +55,7 @@ centerY = mouseY;
 
 //eye1
 
+//map has a function and a range
 var xOffset = map(mouseX, 0, width, -20,20);
 var yOffset = map(mouseY,0, height,-20,20);
 console.log("xOffset:"+ xOffset+ "yOffset:" + yOffset);

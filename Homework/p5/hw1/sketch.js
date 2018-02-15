@@ -7,7 +7,7 @@ var button1;
 var noseColor= "black";
 
 var sel;
-var eyeColor= "black";
+var eyeColor= "white";
 
 function setup() {
   // put setup code here
