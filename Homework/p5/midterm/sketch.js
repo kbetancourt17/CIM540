@@ -1,19 +1,32 @@
-var centerX = 400;
-var centerY = 400;
+var centerX = 150;
+var centerY = 250;
 
+var water;
+var bgImage;
+var imageSize = 400;
+
+function preload() {
+  water = loadImage("assets/water.jpg");
+  
+}
 
 function setup(){
 
-createCanvas(800,800);
-background(255);
+createCanvas(300,400);
+bgImage = water;
+water.resize(300,400);
 
 }
 
 function draw(){
 
-stroke(0);
-fill(0);
-rect(centerX, centerY +200, 80,20)
+background(255)
+image(bgImage,0,0);
+
+stroke(0)
+fill(255)
+ellipse(centerX, centerY +100, 30, 30);
+
 
 
 
