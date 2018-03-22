@@ -10,6 +10,17 @@ var startBounce = false;
 
 var water;
 var bgImage;
+var score =0;
+
+var catchFish1;
+var hiding1 = false;
+
+var catchFish2;
+var hiding2 = false;
+
+var catchFish3;
+var hiding3 = false;
+
 
 
 
@@ -33,10 +44,46 @@ startButton.mousePressed(function (){
   }else{
     startBounce = false;
   }
+
+
+  catchFish1 = createButton("Catch Fish #1");
+  catchFish1.position(10,520);
+  catchFish1.mousePressed(function(){
+
+
+    if(hiding1 == false){
+      hiding1 = true;
+    }else{
+      hiding1 = false;
+    }});
+
+  catchFish2 = createButton("Catch Fish #2");
+  catchFish2.position(100,520);
+  catchFish2.mousePressed(function(){
+
+
+    if(hiding2 == false){
+      hiding2 = true;
+    }else{
+      hiding2 = false;
+    }});
+
+    catchFish3 = createButton("Catch Fish #3");
+    catchFish3.position(190,520);
+    catchFish3.mousePressed(function(){
+
+
+      if(hiding3 == false){
+        hiding3 = true;
+      }else{
+        hiding3 = false;
+      }});
+
+
 });
 
-}
 
+}
 
 function draw(){
 
@@ -58,25 +105,46 @@ triangle(centerX, 360,centerX- 20, 385,centerX+ 20, 385);
 
 if (startBounce == true){
 
-  stroke(0);
-  fill(255);
-  ellipse(width /2, posY, 20, 20);
+if(hiding1 == false){
+  fill(255, 255, 255);
+  stroke(60,100,120);
+  fill(60,100,120);
+  ellipse(width/2 -100, posY, 20, 20)};
+
+if(hiding3 == false){
+  fill(255, 255, 255);
+  stroke(60,100,120);
+  fill(60,100,120);
+  ellipse(width/2 + 100, posY, 20, 20)};
+
+  if(hiding2 == false){
+  fill(255, 255, 255);
+  stroke(60,100,120);
+  fill(60,100,120);
+  ellipse(width /2, posY, 20, 20)};
+
 
   }
 
-if(directionY ==false){posY ++;
+if(directionY == false){posY ++;
 }else {posY --;
+
 }
+
 
 if(posY >= height){
   directionY = true;
+
 }
 
 if(posY <= 0){
   directionY = false;
+
 }
 
-
+if(posY >= 350){
+directionY = true
+}
 
 
 }
