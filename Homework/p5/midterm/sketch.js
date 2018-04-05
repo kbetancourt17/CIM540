@@ -21,7 +21,7 @@ var hiding2 = false;
 var catchFish3;
 var hiding3 = false;
 
-
+var math;
 
 
 function preload() {
@@ -44,6 +44,7 @@ startButton.mousePressed(function (){
   }else{
     startBounce = false;
   }
+
 
 
   catchFish1 = createButton("Catch Fish #1");
@@ -107,24 +108,26 @@ if (startBounce == true){
 
 if(hiding1 == false){
   fill(255, 255, 255);
-  stroke(60,100,120);
-  fill(60,100,120);
+  stroke('#fae');
+  fill('#fae');
   ellipse(width/2 -100, posY, 20, 20)};
 
 if(hiding3 == false){
   fill(255, 255, 255);
-  stroke(60,100,120);
-  fill(60,100,120);
+  stroke('rgba(0,255,0, 1)');
+  fill('rgba(0,255,0, 1)');
   ellipse(width/2 + 100, posY, 20, 20)};
 
   if(hiding2 == false){
   fill(255, 255, 255);
-  stroke(60,100,120);
-  fill(60,100,120);
+  stroke(255,204,0);
+  fill(255, 204, 0);
   ellipse(width /2, posY, 20, 20)};
 
 
   }
+
+
 
 if(directionY == false){posY ++;
 }else {posY --;
