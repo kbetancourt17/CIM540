@@ -19,7 +19,7 @@ http://p5play.molleindustria.org/examples/index.html?fileName=animation_sprite_s
 
 ## Project using P5.js Gibbler library
 
-
+This project would be a sketch that changes aspects of it based on the amplitude of the music.
 
 Inspiration:
 http://charlie-roberts.com/gibber/p5-gibber/
