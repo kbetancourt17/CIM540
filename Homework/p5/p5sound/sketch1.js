@@ -6,7 +6,7 @@ var mySound;
 function preload(){
   soundFormats('mp3', 'ogg');
   mySound = loadSound('assets/song.mp3');
-  rainbow = loadImage("assets/water.jpg");
+  rainbow = loadImage("assets/rainbowimage.png");
 };
 
 function setup(){
